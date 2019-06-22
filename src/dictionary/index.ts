@@ -1,9 +1,9 @@
-import CommonString from '../dictionary/commonString';
-import CharString from '../dictionary/charString';
-import NameString from '../dictionary/nameString';
-import YearString from '../dictionary/yearString';
-import MonthString from '../dictionary/monthString';
-import DayString from '../dictionary/dayString';
+import CommonString from './commonString';
+import CharString from './charString';
+import NameString from './nameString';
+import YearString from './yearString';
+import MonthString from './monthString';
+import DayString from './dayString';
 
 export default {
   CommonString,

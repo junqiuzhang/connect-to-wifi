@@ -1,7 +1,7 @@
 {
-  "name": "wifi",
+  "name": "connect-to-wifi",
   "version": "1.0.0",
-  "description": "wifi",
+  "description": "auto connect to wifi without password",
   "main": "./dist/index.js",
   "scripts": {
     "start": "tsc && node ./dist/index.js",

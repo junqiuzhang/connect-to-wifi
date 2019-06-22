@@ -6,7 +6,7 @@ import { EDictionary } from './constants';
 // 字典
 const Dictionary_name: EDictionary = EDictionary.common;
 
-async function main() {
+async function main(): Promise<IResult> {
   function sliceArray<T>(arr: Array<T>, size: number): Array<Array<T>>{
     let result: Array<Array<T>> = [];
     for (let i = 0, len = arr.length; i < len; i += size){
@@ -20,7 +20,6 @@ async function main() {
     });
     const promiseResult: IResult = await Promise.race(promiseList);
     return promiseResult;
-
   }
   const Network_ssid: string = await input();
   const Dictionary: IResult = await read(Dictionary_name);
@@ -32,11 +31,11 @@ async function main() {
   };
   for (let i = 0; i < SlicePasswordLists.length; i++) {
     result = await sliceConnect(SlicePasswordLists[i]);
-    if (result.OperationResult) {
+    if (result.OperationResult && result.OperationObject) {
       break;
     }
   }
-  console.log(result.OperationObject);
+  return result;
 }
 
-main();
+console.log(main());
