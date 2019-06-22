@@ -1,0 +1,19 @@
+{
+  "name": "wifi",
+  "version": "1.0.0",
+  "description": "wifi",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js",
+    "build": "tsc && node ./dist/function/setDictionary.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.8",
+    "typescript": "^3.5.2"
+  }
+}

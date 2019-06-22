@@ -1,0 +1,27 @@
+const NameString: Array<string> = [
+  'li',
+  'ma',
+  'wu',
+  'xv',
+  'hu',
+  'yu',
+  'he',
+  'sun',
+  'liu',
+  'luo',
+  'gao',
+  'guo',
+  'cai',
+  'zhu',
+  'song',
+  'deng',
+  'meng',
+  'wang',
+  'yang',
+  'zhao',
+  'zhou',
+  'zhang',
+  'huang',
+  'liang'
+];
+export default NameString;
